@@ -12,7 +12,7 @@ import web.service.CarServiceImpl;
 import java.util.ArrayList;
 import java.util.List;
 
-@Controller("/pages")
+@Controller
 public class CarController {
     private Integer index;
     private static CarService service = new CarServiceImpl();
@@ -26,6 +26,6 @@ public class CarController {
 
         model.addAttribute("list", cars);
 
-        return "pages/cars";
+        return "cars";
     }
 }
